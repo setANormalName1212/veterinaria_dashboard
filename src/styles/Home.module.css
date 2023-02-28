@@ -1,0 +1,123 @@
+.sidebar {
+    width: 7vw;
+    height: 100vh;
+    background-color: rgb(89, 2, 202);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user {
+    width: 50px;
+    height: 50px;
+    margin-top: 2vw;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.user > span {
+    background-color: rgb(111, 0, 255);
+    color: whitesmoke;
+    font-size: 7ch;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.actions > span {
+    padding: .25em;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 5ch;
+    color: whitesmoke;
+    display: flex;
+    border-radius: 50%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, .0);
+    transition: .4s;
+}
+
+.settings {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 2vw;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s ease-in;
+}
+
+.settings:hover {
+transform: rotate(90deg);
+}
+
+.settings > span {
+    color: whitesmoke;
+    font-size: 5ch;
+}
+
+.main {
+    width: 93vw;
+    margin-left: 7vw;
+    height: 100vh;
+    background-color: rgb(111, 0, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search {
+    background-color: rgb(89, 2, 202);
+    height: 5vh;
+    width: 80vw;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1ch 2ch;
+}
+
+.search > input {
+    background-color: rgb(89, 2, 202);
+    border: 0px;
+    color: whitesmoke;
+    font-size: 2.5ch;
+    width: 100%;
+}
+
+.search > input:focus {
+    outline: none;
+}
+
+.search > input::placeholder {
+    color: rgb(224, 224, 224);
+} 
+
+.search > span {
+    color: whitesmoke;
+    font-size: 3.75ch;
+    cursor: default;
+}
+
+.cards {
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 40vw);
+    padding: 1ch 2ch;
+}

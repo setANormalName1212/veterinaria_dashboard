@@ -1,10 +1,11 @@
 import styles from '../styles/Card.module.css'
 
-const Card = () => {
+const Card = ({ children }) => {
     return (
         <article
             className={styles.card}
         >
+            {children}
         </article>
     )
 }

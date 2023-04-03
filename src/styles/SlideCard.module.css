@@ -1,0 +1,28 @@
+.slide {
+    width: 93vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.750);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.slide > div {
+    width: calc(95% - 4ch);
+    height: calc(95% - 4ch);
+    background-color: rgb(101, 3, 192);
+    border-radius: 10px;
+    display: flex;
+    padding: 2ch;
+}
+
+.slide > div > span {
+    color: whitesmoke;
+    font-size: 34px;
+    margin-left: auto;
+    cursor: pointer;
+    height: fit-content;
+    border-radius: 50%;
+}
